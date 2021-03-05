@@ -15,33 +15,137 @@
 
     <hr>
 
-    <table align = "center" width = 60% border = 5px solid ="gray" padding = 1px>
+    <form action="result.html" method="GET" style="margin: 0 auto; width: 30%; border: 2px solid gray; padding: 10px;">
 
-            <tr>
-                <td>
-                    <h1>Create a burger!</h1>
-                </td>
-            </tr>
+        <div>
+        
+            <label for="protein"> What type of protein would you like ? </label>
+            
+            <br>
 
-            <tr>
-                <td>
-                    <label for="text"> Burger</label><input type="text" name="burgerType">
-                </td>
-            </tr>
+            <input type="text" id="protein" name="protein" placeholder="A,B,C,D ... ?">
+        
+        </div>
 
-            <tr>
-                <td>
-                    <label for="text"> Burger</label><input type="text" name="burgerType">
-                </td>
-            </tr>
+        <hr>
+        
+        <div>
+        
+            <label for="patty"> How many patties would you like ? </label>
+            
+            <br>
 
-            <tr>
-                <td>
-                    <label for="text"> Burger</label><input type="text" name="burgerType">
-                </td>
-            </tr>
+            <input type="number" id="patty" name="patty" placeholder="Enter number here">
+        
+        </div>
 
-    </table>  
+        <hr>
+        
+        <div>
+
+            <label for="doneness"> How do you want your patty cooked ? </label>
+            <span> Rare </span>
+            <input type="range" name="doneness" id="doneness" value="11" min="1" max="21">
+            <span> Well-done </span>
+
+        </div>
+
+        <hr>
+        
+        <div>
+        
+            <span> What toppings would you like? </span>
+            
+            <br>
+
+            <input type="checkbox" id="lettuce" name="toppings">
+
+            <label for="lettuce"> Lettuce </label>
+
+            <input type="checkbox" id="tomato" name="toppings">
+
+            <label for="tomato"> Tomato </label>
+
+            <input type="checkbox" id="onion" name="toppings">
+
+            <label for="onion"> Onion </label>
+        
+        </div>
+
+        <hr>
+        
+        <div>
+        
+            <span> Would you like to add cheese? </span>
+            
+            <br>
+
+            <input type="radio" id="yes" name="cheese">
+
+            <label for="yes"> Yes </label>
+
+            <input type="radio" id="no" name="cheese">
+
+            <label for="no"> No </label>
+        
+        </div>
+
+        <hr>
+        
+        <div>
+        
+            <label for="bun"> What type of bun would you like?  </label>
+            
+            <br>
+
+            <select id="bun" name="bun">
+                <option value="Sesame">Sesame</option>
+                <option value="Potato">Potato</option>
+                <option value="Pretzel">Pretzel</option>
+            </select>
+        
+        </div>
+
+        <hr>
+        
+        <div>
+        
+            <label for="sauce"> What type of sauce would you like ? </label>
+            
+            <br>
+
+            <input list="sauces" id="sauce" name="sauce" placeholder="Which Sauce ?">
+
+            <datalist id="sauces">
+                <option value="Ketchup"></option>
+                <option value="Mayo"></option>
+                <option value="Mustard"></option>
+
+            </datalist>
+        
+        </div>
+
+        <hr>
+        
+        <div>
+        
+            <label for="else"> Anything else you want to add ? </label>
+            
+            <br>
+
+            <textarea id="else" name="else" rows="3" cols="50"> </textarea>
+        
+        </div>
+
+        <hr>
+
+        <br>
+
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="I choose from the begining" accesskey="r">
+
+    </form>  
 
 </body>
 
